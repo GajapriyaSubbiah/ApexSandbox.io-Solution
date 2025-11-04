@@ -1,9 +1,6 @@
 public String aOrAn(String word) {
     //code here
-    if (String.isBlank(word)) {
-        return word;
-    }
-    if(result.startsWith('a') || result.startsWith('e') || result.startsWith('i') || result.startsWith('o') || result.startsWith('u')){
+    if(!String.isBlank(word) && (result.startsWith('a') || result.startsWith('e') || result.startsWith('i') || result.startsWith('o') || result.startsWith('u'))){
         return result = 'an ' + result;
     }else{
         return result = 'a ' + result;
