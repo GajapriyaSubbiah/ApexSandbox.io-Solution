@@ -1,7 +1,6 @@
 public String aOrAn(String word) {
     //code here
-    String word;
-    if(word.startswith('a') | word.startswith('e')){
+    if(word.startswith('a') || word.startswith('e')){
         return word = an + word;
     }else{
         return word = a + word;
