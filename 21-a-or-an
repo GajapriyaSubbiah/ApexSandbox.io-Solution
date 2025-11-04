@@ -1,12 +1,12 @@
 public String aOrAn(String word) {
     //code here
     if(!String.isBlank(word)){
-    }
+    
     String result = word.trim();
-    if(result.startsWith('a') || result.startsWith('e')){
+    if(result.startsWith('a') || result.startsWith('e') || result.startsWith('i') || result.startsWith('o') || result.startsWith('u')){
         return result = 'an ' + result;
     }else{
         return result = 'a ' + result;
     }
-    
+    }
 }
