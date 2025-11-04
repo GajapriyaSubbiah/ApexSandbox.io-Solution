@@ -1,9 +1,9 @@
 public String aOrAn(String word) {
     //code here
-    String word = word.trim();
-    if(word.startsWith('a') || word.startsWith('e')){
-        return word = an + word;
+    String result = word.trim();
+    if(result.startsWith('a') || result.startsWith('e')){
+        return result = an + word;
     }else{
-        return word = a + word;
+        return result = a + word;
     }
 }
