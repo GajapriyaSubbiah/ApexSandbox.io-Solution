@@ -1,6 +1,7 @@
 public String aOrAn(String word) {
     //code here
-    if(String.isBlank(word)){
+    if(!String.isBlank(word)){
+    }
     String result = word.trim();
     if(result.startsWith('a') || result.startsWith('e')){
         return result = 'an ' + result;
