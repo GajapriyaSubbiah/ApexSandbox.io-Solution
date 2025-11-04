@@ -2,8 +2,8 @@ public String aOrAn(String word) {
     //code here
     String word;
     if(word.startswith('a') | word.startswith('e')){
-        word = an + word;
+        return word = an + word;
     }else{
-        word = a + word;
+        return word = a + word;
     }
 }
