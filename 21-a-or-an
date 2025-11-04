@@ -1,0 +1,9 @@
+public String aOrAn(String word) {
+    //code here
+    String word;
+    if(word.startswith('a') | word.startswith('e')){
+        word = an + word;
+    }else{
+        word = a + word;
+    }
+}
