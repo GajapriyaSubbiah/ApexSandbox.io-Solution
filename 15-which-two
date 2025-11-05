@@ -1,0 +1,9 @@
+public String whichTwo(Integer a, Integer b, Integer c) {
+    //code here
+    String Str;
+    if(((a+b) = c) || ((b+c) = a) || ((a+c) = b)){
+        return str;
+    }else{
+        return null;
+    }
+}
