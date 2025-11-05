@@ -3,10 +3,10 @@ public Integer rockPaperScissors(String player1, String player2) {
     List<String> validMoves = new List<String>{'rock', 'paper', 'scissors'};
     if (!validMoves.contains(player1) || !validMoves.contains(player2)) {
             System.debug('Error: Invalid move(s) provided.');
-            return null;
+            return 0;
     }
     if (player1 == player2) {
-            return null; // tie
+            return 0; // tie
     } else if (
         (player1 == 'rock' && player2 == 'scissors') ||
         (player1 == 'scissors' && player2 == 'paper') ||
