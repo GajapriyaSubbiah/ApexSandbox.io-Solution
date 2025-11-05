@@ -1,0 +1,19 @@
+public Boolean isEndWithZero(Integer num){
+    //code here
+    try{
+        if (num == null) {
+            System.debug('Error: Input number cannot be null.');
+            return false;
+        }
+
+        Integer mod = Math.mod(num, 10)
+        if(mod == 0){
+            isEndWithZero = true;
+        }else{
+            isEndWithZero = false
+        }
+    }catch(exception e){
+        System.debug('Error in isEndWithZero(): ' + e.getMessage());
+        return false;
+    }
+}
