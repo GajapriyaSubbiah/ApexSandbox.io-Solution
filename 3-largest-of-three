@@ -9,6 +9,7 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
             }else{
                 return num3;
             }
+            return null;
         }
     }catch (Exception e) {
             System.debug('Error in findLargest(): ' + e.getMessage());
