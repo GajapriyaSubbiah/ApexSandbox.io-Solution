@@ -1,5 +1,6 @@
 public Boolean isEndWithZero(Integer num){
     //code here
+    Boolean isEndWithZero;
     try{
         if (num == null) {
             System.debug('Error: Input number cannot be null.');
