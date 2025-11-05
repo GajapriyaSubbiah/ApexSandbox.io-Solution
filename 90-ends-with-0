@@ -6,7 +6,7 @@ public Boolean isEndWithZero(Integer num){
             return false;
         }
 
-        Integer mod = Math.mod(num, 10)
+        Integer mod = Math.mod(num, 10);
         if(mod == 0){
             isEndWithZero = true;
         }else{
