@@ -1,9 +1,13 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
     String Str;
-    if(((a+b) == c) || ((b+c) == a) || ((a+c) == b)){
-        return str;
+    if(a+b == c){
+        return c;
+    }else if(b+c == a){
+        return a;
+    }else if(a+c == b){
+        return b;
     }else{
-        return null;
+        return '';
     }
 }
