@@ -10,7 +10,7 @@ public Boolean isEndWithZero(Integer num){
         if(mod == 0){
             isEndWithZero = true;
         }else{
-            isEndWithZero = false
+            isEndWithZero = false;
         }
     }catch(exception e){
         System.debug('Error in isEndWithZero(): ' + e.getMessage());
