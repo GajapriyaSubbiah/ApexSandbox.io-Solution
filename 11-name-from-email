@@ -1,9 +1,9 @@
 public String nameFromEmail(String email) {
     String substr = email.substringBefore('@');
     system.debug(substr);
-    String firstname = capitalize(substr.substringBefore('.'));
-    String lastname = capitalize(substr.substringAfter('.'));
-    String fullName = firstname + lastname;
+    String firstname = substr.substringBefore('.');
+    String lastname = substr.substringAfter('.');
+    String fullName = String.capitalize(firstname + lastname);
     
     return fullName;
 }
