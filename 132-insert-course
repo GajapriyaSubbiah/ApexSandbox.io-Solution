@@ -1,0 +1,18 @@
+public Id insertCourse(String name, String details, Integer credits) {
+    // code here
+    if (credits != 1 && credits != 2 && credits != 3 && credits != 4) {
+            return null;
+        }
+
+        // Create a new course record
+        apxio__Course__c newCourse = new apxio__Course__c();
+        newCourse.Name = name;
+        newCourse.apxio__Course_Details__c = details;
+        newCourse.apxio__Credits__c = credits;
+
+        // Insert the record
+        insert newCourse;
+
+        // Return the Id of the inserted record
+        return newCourse.Id;
+}
