@@ -1,3 +1,8 @@
 public Boolean isPrime(Integer num) {
     //code here
+    if(num <= 1){
+        return true;
+    }else{
+        return false;
+    }
 }
