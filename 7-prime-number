@@ -1,6 +1,6 @@
 public Boolean isPrime(Integer num) {
     //code here
-    Integer num = Math.mod(num, 1)
+    Integer num = Math.mod(Math.sqrt(num));
     if(num <= 1){
         return true;
     }else{
