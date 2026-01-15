@@ -1,16 +1,10 @@
 public String nameFromEmail(String email) {
-    if (String.isBlank(email) || !email.contains('@')) {
-        return '';
-    }
-
-    String localPart = email.substringBefore('@');
-
-    if (!localPart.contains('.')) {
-        return capitalize(localPart);
-    }
-
-    String first = localPart.substringBefore('.');
-    String last  = localPart.substringAfter('.');
-
-    return capitalize(first) + ' ' + capitalize(last);
+    String substr = email.substringBefore('@');
+    system.debug(substr);
+    String substr1 = substr.substringBefore('.');
+    String substr2 = substr.substringAfter('.');
+    String firstname = substring(0,1)).toUppercase();
+    String lastname = substring(1).toLowerCase();
+    
+    return firstname + ' ' + lastname;
 }
