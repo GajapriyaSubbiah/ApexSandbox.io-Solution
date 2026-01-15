@@ -1,14 +1,22 @@
 public String reverseWordsInASentence(String sentence){
     if (String.isBlank(sentence)) {
-        return ''; // Handle empty or null input
+        return '';
     }
 
-    // Split the sentence into words using spaces
-    List<String> words = sentence.split('\\s+'); // Handles multiple spaces
+    // Step 1: Trim extra spaces at start/end
+    sentence = sentence.trim();
 
-    // Reverse the list of words
-    words.reverse();
+    // Step 2: Reverse the whole sentence
+    String reversedSentence = String.reverse(sentence);
 
-    // Join the reversed words back into a sentence
-    return String.join(words, ' ');
+    // Step 3: Split reversed sentence into words (reversed characters)
+    List<String> reversedWords = reversedSentence.split('\\s+');
+
+    // Step 4: Reverse each word individually
+    for (Integer i = 0; i < reversedWords.size(); i++) {
+        reversedWords[i] = String.reverse(reversedWords[i]);
+    }
+
+    // Step 5: Join words with single space
+    return String.join(reversedWords, ' ');
 }
