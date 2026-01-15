@@ -16,3 +16,4 @@ public Id insertCourse(String name, String details, Integer credits) {
         // Return the Id of the inserted record
         return newCourse.Id;
 }
+}
