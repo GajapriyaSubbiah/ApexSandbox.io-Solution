@@ -1,5 +1,5 @@
 public String formatName(String firstName, String lastName) {
     //code here
-    String formatName = String.concat(firstName ' ' + lastName);
+    String formatName = String.concat(firstName, ' ' + lastName);
     return formatName;
 }
