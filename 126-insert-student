@@ -1,0 +1,14 @@
+public Id insertStudent(String name, String email) {
+    // code here
+    Integer num = (Integer)(Math.random() * 10000)
+    List<apxio__Student__c> stuList = new List<apxio__Student__c>();
+    for(apxio__Student__c stu: stuList){
+        apxio__Student__c stud = new apxio__Student__c();
+        stud.name = 'Test'+ String.valueOf(num).leftPad(4, '0');
+        stud.email = stud.name+'@test.com';
+    }
+
+    if(!stuList.isEmpyt()){
+        insert stuList;
+    }
+}
