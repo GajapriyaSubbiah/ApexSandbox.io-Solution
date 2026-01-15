@@ -6,6 +6,7 @@ public Id insertStudent(String name, String email) {
         apxio__Student__c stud = new apxio__Student__c();
         stud.name = 'Test'+ String.valueOf(num).leftPad(4, '0');
         stud.email = stud.name+'@apexsandbox.io';
+        stuList.add(stud);
     }
 
     if(!stuList.isEmpyt()){
