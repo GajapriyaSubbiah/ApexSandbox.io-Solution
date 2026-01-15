@@ -1,14 +1,13 @@
 public Id insertStudent(String name, String email) {
     // code here
-    List<apxio__Student__c> stuList = new List<apxio__Student__c>();
-    for(apxio__Student__c stu: stuList){
-        apxio__Student__c stud = new apxio__Student__c();
-        stud.Name = name;
-        stud.apxio__Email__c = email;
-        stuList.add(stud);
-    }
-
-    if(!stuList.isEmpyt()){
-        insert stuList;
-    }
+    // Create a new student record
+        apxio__Student__c newStudent = new apxio__Student__c();
+        newStudent.Name = name;
+        newStudent.apxio__Email__c = email;
+        
+        // Insert the record
+        insert newStudent;
+        
+        // Return the Id of the inserted record
+        return newStudent.Id;
 }
