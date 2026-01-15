@@ -1,6 +1,9 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
-    if (credits != 1 && credits != 2 && credits != 3 && credits != 4) {
+     String creditsStr = String.valueOf(credits);
+        
+        // Check if the credits value is valid
+        if (creditsStr != '1' && creditsStr != '2' && creditsStr != '3' && creditsStr != '4') {
             return null;
         }
 
@@ -8,7 +11,7 @@ public Id insertCourse(String name, String details, Integer credits) {
         apxio__Course__c newCourse = new apxio__Course__c();
         newCourse.Name = name;
         newCourse.apxio__Course_Details__c = details;
-        newCourse.apxio__Credits__c = Integer.valueof(credits);
+        newCourse.apxio__Credits__c = creditsStr;
 
         // Insert the record
         insert newCourse;
