@@ -3,8 +3,12 @@ public String nameFromEmail(String email) {
     system.debug(substr);
     String substr1 = substr.substringBefore('.');
     String substr2 = substr.substringAfter('.');
-    String firstname = substr1(0,1)).toUppercase();
-    String lastname = substr2(1).toLowerCase();
-    
+    String firstname =
+        substr1.substring(0,1).toUpperCase() +
+        substr1.substring(1).toLowerCase();
+
+    String lastname =
+        substr2.substring(0,1).toUpperCase() +
+        substr2.substring(1).toLowerCase();
     return firstname + ' ' + lastname;
 }
