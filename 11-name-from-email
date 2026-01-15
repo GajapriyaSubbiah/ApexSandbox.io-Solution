@@ -3,8 +3,8 @@ public String nameFromEmail(String email) {
     system.debug(substr);
     String substr1 = substr.substringBefore('.');
     String substr2 = substr.substringAfter('.');
-    String firstname = substr1.capitalize(substr1);
-    String lastname = substr2.capitalize(substr2);
+    String firstname = capitalize(substr1);
+    String lastname = capitalize(substr2);
     
     return firstname + ' ' + lastname;
 }
