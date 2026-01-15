@@ -1,0 +1,17 @@
+public Integer fibonacci(Integer n) {
+    if (n == 1 || n == 2) {
+        return 1; // First two numbers are 1
+    }
+    
+    Integer a = 1; // Fib(1)
+    Integer b = 1; // Fib(2)
+    Integer fib = 0;
+    
+    for (Integer i = 3; i <= n; i++) {
+        fib = a + b; // Next Fibonacci number
+        a = b;       // Shift the numbers
+        b = fib;
+    }
+    
+    return fib;
+}
