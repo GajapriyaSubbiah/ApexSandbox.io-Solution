@@ -4,8 +4,8 @@ public Id insertStudent(String name, String email) {
     List<apxio__Student__c> stuList = new List<apxio__Student__c>();
     for(apxio__Student__c stu: stuList){
         apxio__Student__c stud = new apxio__Student__c();
-        stud.name = 'Test'+ String.valueOf(num).leftPad(4, '0');
-        stud.email = stud.name+'@apexsandbox.io';
+        stud.Name = 'Test'+ String.valueOf(num).leftPad(4, '0');
+        stud.apxio__Email__c = stud.name+'@apexsandbox.io';
         stuList.add(stud);
     }
 
