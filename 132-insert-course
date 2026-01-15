@@ -8,7 +8,7 @@ public Id insertCourse(String name, String details, Integer credits) {
         apxio__Course__c newCourse = new apxio__Course__c();
         newCourse.Name = name;
         newCourse.apxio__Course_Details__c = details;
-        newCourse.apxio__Credits__c = credits;
+        newCourse.apxio__Credits__c = Integer.valueof(credits);
 
         // Insert the record
         insert newCourse;
